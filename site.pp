@@ -14,7 +14,7 @@ $primary_puppet_server = "puppet.somepop.yourdomain.com"
 
 # Default file parameters
 File {
-    ignore => ".svn",
+    ignore => [ '.svn', '.git', 'CVS' ],
     owner  => "root",
     group  => "root",
     mode   => "644",
